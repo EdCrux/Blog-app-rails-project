@@ -1,0 +1,11 @@
+<div class="white box">
+<h2>Your blogs</h2>
+<ul>
+  <% @articles.each do |article| %>
+    <li class="smallBox">
+      <%= link_to article.title, article_path(article), class:'article-index' %>
+    </li>
+  <% end %>
+</ul>
+
+</div>

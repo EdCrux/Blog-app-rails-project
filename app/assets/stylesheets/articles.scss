@@ -1,0 +1,56 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(238, 238, 238);
+    color: rgb(90, 90, 90);
+    font-family: 'Corbel'
+}
+
+.white {
+    background: white;
+}
+
+nav {
+    background-color:#193240;
+    display: flex;
+    align-items: center;
+    color:white;
+    padding: 1em 3.2em;
+    box-shadow: 2px 3px 5px 0px rgba(112, 112, 112, 0.75);
+}
+
+
+.box {
+    width: 90%;
+    box-shadow: 2px 3px 5px 0px rgba(112, 112, 112, 0.75);
+    margin: 1rem auto 0 auto;
+    h2 {
+        color: #193240;
+        text-align:center;
+        padding: 1rem;
+    }
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        li {
+            font-family: 'Open Sans';
+            list-style-type: none;
+        }
+    }
+   
+    .smallBox {
+      box-shadow: 2px 3px 5px 0px rgba(112, 112, 112, 0.75);
+      padding:1rem;
+      margin: 1em;
+    }
+
+    .article-index {
+        text-decoration: none;
+        color: rgba(67, 100, 119, 0.459);
+    }
+}
