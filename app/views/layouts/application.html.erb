@@ -10,12 +10,13 @@
   </head>
 
   <body>
-   
-   <nav>
-    <%= image_tag "https://icon-library.net/images/icon-blog-png/icon-blog-png-13.jpg", {height: 100} %>
-     <h3>Blogger</h3>
-   </nav>
-
+      <nav>
+        <div class="wrapper">
+            <%= image_tag "https://icon-library.net/images/icon-blog-png/icon-blog-png-13.jpg", {height: 100} %>
+            <h3><%= link_to "Blogger", articles_path, class: "home" %></h3>
+        </div>
+        <%= link_to "Create Article", new_article_path, class: "new_article" %>
+      </nav>
     <%= yield %>
   </body>
 </html>

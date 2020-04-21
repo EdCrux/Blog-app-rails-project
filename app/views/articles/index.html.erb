@@ -1,9 +1,9 @@
 <div class="white box">
-<h2>Your blogs</h2>
+<h2>Your articles</h2>
 <ul>
   <% @articles.each do |article| %>
     <li class="smallBox">
-      <%= link_to article.title, article_path(article), class:'article-index' %>
+      <h3><%= link_to article.title, article_path(article), class:'article-index' %></h3>
     </li>
   <% end %>
 </ul>

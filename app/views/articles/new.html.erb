@@ -1,0 +1,22 @@
+<div class="new">
+<div class="white box">
+<%= form_for(@article) do |f| %>
+  <ul>
+    <% @article.errors.full_messages.each do |error| %>
+      <li> <%= error %></li>
+    <% end  %>
+  </ul>
+  <div class="submit-container">
+    <%= f.submit %>
+  </div>
+  <p>
+    <%= f.text_field :title, class: "form_input" %>
+  </p>
+  <p>
+    <%= f.text_area :body , class:"form_body"%>
+  </p>
+
+<% end %>
+
+</div>
+</div>
